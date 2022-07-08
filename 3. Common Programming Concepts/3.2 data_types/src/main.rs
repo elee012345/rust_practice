@@ -52,6 +52,40 @@ fn main() {
     let _c = 'z';
     let _z: char = 'ℤ'; // with explicit type annotation
     let _heart_eyed_cat = '😻';
-    
+
+
+    // on to compound types 
+    // rust has arrays (like java) and tuples (like python)
+    // these are the two 'primitive' compound types
+
+    // you can define different types for each value in the tuples
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+    // you can define variables off of tuples
+    let another_tuple = (500, 6.4, 1);
+    let (x, y, z) = another_tuple;
+    println!("The value of x is: {x}");
+    println!("The value of y is: {y}");
+    println!("The value of z is: {z}");
+
+    // get individual values from tuples
+    let _five_hundred = tup.0;
+
+
+    // arrays have a fixed length
+    // more complicated arrays and stuff like arraylists are vectors in rust
+    // they're defined by square brackets
+    let array = [1, 2, 3, 4, 5];
+
+    // define array type 
+    let array: [i32; 5] = [1, 2, 3, 4, 5];
+
+    // same thing as let array = [3, 3, 3, 3, 3];
+    let array = [3; 5];
+
+    // access index of an array
+    let index_zero = array[0];
+    println!("first element in array is {index_zero}");
+
 
 }
