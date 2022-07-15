@@ -48,6 +48,17 @@ fn main() {
         another_counter += 1;
     }
 
-    
+    let array = [1, 2, 3, 4, 5];
+    // looping through an array with a for loop similar to python
+    for value in array {
+        println!("value = {value}");
+    }
+
+    // a normal for loop
+    // similar to for i in range(num) in python
+    // the .rev() reverses the range so that we count down instead
+    for num in (1..10).rev() {
+        println!("num = {num}");
+    }
 
 }
